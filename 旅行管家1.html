@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅行私人管家 - 智绘旅途</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e88e5, #0d47a1);
+            color: white;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content {
+            background-color: white;
+            margin: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            color: #0d47a1;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .button {
+            background-color: #2196f3;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #1976d2;
+        }
+
+        .card {
+            border: 1px solid #e3f2fd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #0d47a1, #1e88e5);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div class="header">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fa-solid fa-earth-americas text-3xl mr-2"></i>
+                <h1 class="text-3xl font-bold">智绘旅途</h1>
+            </div>
+            <a href="#" class="text-white hover:text-sky-300">返回智绘旅途</a>
+            <h2 class="text-2xl font-bold">旅行私人管家</h2>
+        </div>
+    </div>
+
+    <!-- 主体区域 -->
+    <div class="main-content">
+        <!-- 方案确认与购买板块 -->
+        <div class="section">
+            <h2 class="section-title">最终旅行方案确认与购买</h2>
+            <div class="border border-gray-300 p-4 rounded-md">
+                <p>这里展示用户在 AI 智能生成方案基础上做细微调节后的最终方案，包括旅行路线、每日行程安排、费用明细等信息。</p>
+            </div>
+            <button class="button mt-4">一键购买</button>
+        </div>
+
+        <!-- 实时动态提醒板块 -->
+        <div class="section">
+            <h2 class="section-title">旅行实时动态提醒</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="card p-4">
+                    <i class="fa-solid fa-sun text-2xl text-yellow-500"></i>
+                    <p class="mt-2">天气：晴天，25℃</p>
+                </div>
+                <div class="card p-4">
+                    <i class="fa-solid fa-users text-2xl text-green-500"></i>
+                    <p class="mt-2">客流：故宫博物院，客流适中</p>
+                </div>
+                <div class="card p-4">
+                    <i class="fa-solid fa-car text-2xl text-blue-500"></i>
+                    <p class="mt-2">交通：市区道路畅通，机场航班正常</p>
+                </div>
+            </div>
+            <button class="button mt-4">查看最优建议</button>
+        </div>
+
+        <!-- 旅居服务板块 -->
+        <div class="section">
+            <h2 class="section-title">旅居服务</h2>
+            <p>我们提前与各大旅居适宜地点附近的商超发展合作关系，在用户抵达前补全生活必需品，并提供定期补足所需品的服务。</p>
+            <button class="button mt-4">设置旅居服务</button>
+        </div>
+
+        <!-- 周边推荐板块 -->
+        <div class="section">
+            <h2 class="section-title">旅居地周边推荐</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="card">
+                    <img src="https://picsum.photos/200/150" alt="景点图片" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">景点名称</h3>
+                        <p class="text-gray-600">简要描述该景点的特色和亮点。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/200/150" alt="饭店图片" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">饭店名称</h3>
+                        <p class="text-gray-600">介绍该饭店的美食和服务。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/200/150" alt="娱乐项目图片" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold">娱乐项目名称</h3>
+                        <p class="text-gray-600">说明该娱乐项目的玩法和乐趣。</p>
+                    </div>
+                </div>
+            </div>
+            <button class="button mt-4">获取个性化推荐</button>
+        </div>
+    </div>
+
+    <!-- 底部区域 -->
+    <div class="footer">
+        <p>© 2024 智绘旅途 - AI 旅行规划平台 | 使用 AI 技术生成个性化路线</p>
+        <a href="#" class="text-white hover:text-sky-300">联系我们</a>
+    </div>
+</body>
+
+</html>    
