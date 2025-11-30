@@ -1,14 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="智绘旅途：AI个性化旅游管家，专为青壮年与家庭打造的千人千面旅行体验网站" />
-    <title>智绘旅途 | 千人千面AI旅行体验</title>
-  </head>
-  <body>
-    <noscript>需要启用 JavaScript 才能访问智绘旅途。</noscript>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>智绘旅途 | 首页</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <!-- 替换为你的 logo 图片：assets/logo.png -->
+      <img src="assets/logo-placeholder.png" alt="智绘旅途 Logo" class="logo" />
+      <div class="brand">
+        <h1>智绘旅途</h1>
+        <p class="slogan">灵活出行，智在不设限</p>
+      </div>
+    </div>
+    <nav class="header-right">
+      <a href="#" class="btn btn-outline">注册</a>
+      <a href="#" class="btn btn-primary">登录</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="search-area">
+      <input type="text" class="search-input" placeholder="请输入您的地点或要求" />
+      <button class="btn btn-search">搜索</button>
+    </section>
+
+    <section class="hero">
+      <div class="intro">
+        <h2>通过 AI 重构个性化旅行体验</h2>
+        <p>精准解析偏好、动态生成全链条方案、全程私人管家式陪伴</p>
+      </div>
+      <div class="ad-slot">
+        <!-- 广告/横幅占位（替换 assets/ad-placeholder.png） -->
+        <img src="assets/ad-placeholder.png" alt="广告位" />
+      </div>
+    </section>
+
+    <section class="panels">
+      <a class="panel" href="profile.html" aria-label="用户画像">
+        <div class="panel-media">
+          <!-- 插入用户画像相关图片：assets/panel-profile.png -->
+          <img src="assets/panel-profile.png" alt="用户画像" />
+        </div>
+        <div class="panel-body">
+          <h3>用户画像</h3>
+          <p>整合多渠道数据，精准描绘用户偏好，为出游决策打下基础。</p>
+        </div>
+      </a>
+
+      <a class="panel" href="generator.html" aria-label="AI 智能生成">
+        <div class="panel-media">
+          <!-- 插入方案可视化图片：assets/panel-generator.png -->
+          <img src="assets/panel-generator.png" alt="AI 智能生成" />
+        </div>
+        <div class="panel-body">
+          <h3>AI 智能生成</h3>
+          <p>选择标签后生成多套可编辑的全链条行程方案并可视化呈现。</p>
+        </div>
+      </a>
+
+      <a class="panel" href="concierge.html" aria-label="旅行私人管家">
+        <div class="panel-media">
+          <!-- 插入私人管家图片：assets/panel-concierge.png -->
+          <img src="assets/panel-concierge.png" alt="旅行私人管家" />
+        </div>
+        <div class="panel-body">
+          <h3>旅行私人管家</h3>
+          <p>自动提醒/跳转订票酒店，闲时智能推荐周边游玩。</p>
+        </div>
+      </a>
+    </section>
+
+    <section class="foot-space">
+      <!-- 预留更多空间用于放置景点展示图、广告等 -->
+      <div class="gallery-placeholder">
+        <p>景点图片 / 活动广告位（请替换 assets/gallery-*.png）</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 智绘旅途 | 推动旅行服务从“千人一面”向“千人千面”升级</p>
+  </footer>
+</body>
 </html>
